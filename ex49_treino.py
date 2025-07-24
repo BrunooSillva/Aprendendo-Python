@@ -1,5 +1,8 @@
 #First-Class Function
 
+# Nesse conceito estamos trabalhando em como uma função tambem é um objeto.
+# E pode ser atribuido a uma variaval
+
 def boasvindas(nome):
     print(f'Boas vindas {nome}!')
 
@@ -8,6 +11,8 @@ falar = boasvindas
 falar('Bruno')
 
 #Higher-Order Function
+
+# Nesse conceito estamos aplicando uma função que retorna outra função
 
 def executar_operacao(funcao, numero):
     return funcao(numero)
@@ -18,6 +23,8 @@ def quadrado(x):
 print(executar_operacao(quadrado, 5))
 
 #Criando uma função que retorna outra
+
+# Nesse conceito estamos aplicando uma função que retorna outra função(closure)
 
 def criar_saudacao(nome):
     def mensagem():
