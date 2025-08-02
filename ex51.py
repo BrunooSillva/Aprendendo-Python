@@ -19,10 +19,11 @@ perguntas = [
     },
 ]
 
-
+#for para percorrer cada pergunta dentro da variavel perguntas
 for pergunta in perguntas:
     print(f'Pergunta: {pergunta['Pergunta']}')
     
+    #for para que percorra as opções dentro de cada pergunta e exiba seu indice
     for i, opcao in enumerate(pergunta['Opções']):
         print(f'{i}){opcao}')
 
